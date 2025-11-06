@@ -1,0 +1,76 @@
+{
+
+    "experiment_notes": "Experiments_EURUSD",
+    
+    "training_params": {
+        "interval": "5m",
+        "limit": 10000,
+        "tolerance": 0.0005,
+        "horizon": 1
+    },
+
+    "trade_params": {
+        "___OLD___coin_amount": 1,
+        "symbol_to_trade": "BTCUSD",
+        "commissions": 0,
+        "inverted_logic": false,
+        "force_trade_on_hold": false,
+        "hold_fallback_action": "SELL"
+    },
+
+    "open_position_params": {
+        "weight_greater_than": 1,
+        "rockets_algs_with_weight_grater_than": -1,
+        "volatility_threshold": -1,
+        "min_winning_label_weigh": 2
+    },
+
+    "close_position_params": {
+        "consecutive_decreases_threshold": 5,
+        "sudden_changes_threshold": 70,
+        "take_profit_highest_abs_value": 400,
+        "stop_loss_highest_abs_value": -300,
+        "take_profit_abs_value": 300,
+        "stop_loss_abs_value": -250
+    },
+
+    "lifecycle_params": {
+        "positions_in_the_lifecycle": 10,
+        "net_delta__and_current_rate_job_interval": 30,
+        "leaderboard_and_open_pos_job_interval": 30,
+        "opened_positions_monitoring_job_interval": 300,
+        "opened_positions_high_frequency_monitoring_job_interval": 30,
+        "freeze_after_loss": 3,
+        "post_freeze_grace_ops": 2
+    },
+
+    "symbol_overrides": {
+        "BTCUSD": {
+            "digits": 2,
+            "point": 0.01,
+            "contractSize": 1.0,
+            "minVolume": 0.01,
+            "maxVolume": 1000,
+            "volumeStep": 0.01,
+            "stopsLevel": 0
+        },
+        "BTCEUR": {
+            "digits": 2,
+            "point": 0.01,
+            "contractSize": 1.0,
+            "minVolume": 0.01,
+            "maxVolume": 1000,
+            "volumeStep": 0.01,
+            "stopsLevel": 0
+        }
+    },
+    "tracking": {
+        "min_abs_net_delta": 0.0005,            
+        "min_rate_rel_change": 0.0001,          
+        "dedupe_window_seconds": 10,            
+        "store_invalid_as_flagged": false       
+    }
+
+
+
+}

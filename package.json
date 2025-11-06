@@ -1,0 +1,25 @@
+{
+  "name": "bushido_expert_dynamic_mongo_config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "start": "node src/scheduler.js",
+  "run:etl": "node -e \"require('./src/jobs/etl_hourly_configs').runEtlFromEnv()\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodev/bushido_expert_dynamic_mongo_config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiodev/bushido_expert_dynamic_mongo_config/issues"
+  },
+  "homepage": "https://github.com/sergiodev/bushido_expert_dynamic_mongo_config#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongodb": "^7.0.0",
+    "node-cron": "^4.2.1"
+  }
+}
