@@ -1,0 +1,58 @@
+node_modules# ---- Log e debug ----
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Dati runtime / PID ----
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ---- Coverage ----
+coverage
+*.lcov
+
+# ---- Build / output ----
+dist
+build
+out
+.next
+.nuxt
+.svelte-kit
+storybook-static
+
+# ---- Cache varie ----
+.npm
+.cache
+.parcel-cache
+.turbo
+.eslintcache
+.stylelintcache
+.tsbuildinfo
+
+# ---- Dipendenze ----
+node_modules/
+
+# ---- Variabili d'ambiente (mantieni solo gli esempi) ----
+.env
+.env.*
+!.env.example
+
+# ---- Provider/hosting ----
+.vercel
+.netlify
+
+# ---- Sistema / Editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
